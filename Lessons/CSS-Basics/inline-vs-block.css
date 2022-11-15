@@ -1,0 +1,25 @@
+.outline-box{
+    outline: 3px solid red;
+}
+ 
+div > a{
+    background-color: green;
+    /* padding-left:  250px;
+    padding-right: 250px;
+    padding-top:150px;
+    padding-bottom: 150px; */
+    padding: 150px 250px 150px 250px;
+    /* around like clock, top right bottom left*/
+
+    /* padding : 150px 250px; */
+    display: inline-block;
+    
+}
+
+a{
+    background-color: red;
+}
+
+div > a:hover{
+    background-color: peru;
+}

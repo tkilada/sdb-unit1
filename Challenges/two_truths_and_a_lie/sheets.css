@@ -1,0 +1,27 @@
+h1 {
+    color: lightgreen;
+    text-align: center;
+}
+h3 {
+    color: blue;
+}
+p{
+    color: red;
+}
+.box{
+    margin-top: 15px;
+    border-style: solid;
+    display: inline-block;
+    border-width: thick;
+    width: 200px;
+    height: 250px;
+    border-radius: 25px;
+    background-color: lightgray;
+    }
+section{
+    background-color: gray;
+    text-align: center;
+    border-style: solid;
+    border-radius: 25px;
+    border-width: thick;
+}
