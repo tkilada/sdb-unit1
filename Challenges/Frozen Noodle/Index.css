@@ -9,6 +9,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
+    margin: 0 3.5rem;
 }
 
 .header-image {
@@ -23,7 +24,7 @@ h1{
     font-size: 6.5rem;
     text-transform: uppercase;
     text-align: right;
-    line-height: 1rem;
+    line-height: 2rem;
 
 }
 
@@ -35,4 +36,27 @@ h1{
 .header-text:nth-child(1) { 
     color: var(--primary);
 
+}
+.btn-primary {
+    background-color: var(--primary);
+    color: var(--secondary);
+}
+
+.btn-lg {
+    font-size: 20px;
+    padding: 1.5em; ;
+}
+
+.btn{
+    font-size: 18px;
+    padding: 1em;
+}
+
+.btn-100{
+    min-width: 100%;
+}
+
+.btn-primary:hover {
+    background-color: var(--secondary);
+    color: var(--primary);
 }
