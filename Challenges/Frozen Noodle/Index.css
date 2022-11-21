@@ -1,62 +1,96 @@
 :root {
-    background-color: #191919;
-    --primary: #c6a7ed;
-    --secondary: white;
-    color: var(--secondary);
+  background-color: #191919;
+  --primary: #c6a7ed;
+  --secondary: white;
+  color: var(--secondary);
 }
-.wrapper{
-    /* background-color: #c6a7ed; */
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    margin: 0 3.5rem;
+.wrapper {
+  /* background-color: #c6a7ed; */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  margin: 0 3.5rem;
 }
 
 .header-image {
-    height: 500px;
-    border: 50px solid var(--primary);
-
+  height: 500px;
+  border: 50px solid var(--primary);
 }
-h1{
-    font-family: "Arvo", serif;
-}
-.header-text{
-    font-size: 6.5rem;
-    text-transform: uppercase;
-    text-align: right;
-    line-height: 2rem;
-
+h1,
+h2,
+h3 {
+  font-family: "Arvo", serif;
 }
 
-.header-text-group{
-    margin-left: auto;
-    padding: 4.5rem;
+h2 {
+  font-size: 45px;
+}
+h3 {
+  font-size: 25px;
+}
+.header-text {
+  font-size: 6.5rem;
+  text-transform: uppercase;
+  text-align: right;
+  line-height: 2rem;
 }
 
-.header-text:nth-child(1) { 
-    color: var(--primary);
+.header-text-group {
+  margin-left: auto;
+  padding: 4.5rem;
+}
 
+.header-text:nth-child(1) {
+  color: var(--primary);
 }
 .btn-primary {
-    background-color: var(--primary);
-    color: var(--secondary);
+  background-color: var(--primary);
+  color: var(--secondary);
 }
 
 .btn-lg {
-    font-size: 20px;
-    padding: 1.5em; ;
+  font-size: 20px;
+  padding: 1.5em;
 }
 
-.btn{
-    font-size: 18px;
-    padding: 1em;
+.btn {
+  font-size: 18px;
+  padding: 1em;
 }
 
-.btn-100{
-    min-width: 100%;
+.btn-100 {
+  min-width: 100%;
 }
 
 .btn-primary:hover {
-    background-color: var(--secondary);
-    color: var(--primary);
+  background-color: var(--secondary);
+  color: var(--primary);
+}
+/* products */
+.wrapper-food-display {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  /* grid-template-columns: 1fr 1fr 1fr; */
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.food-display {
+  padding: 2rem;
+}
+.food-display > img {
+  min-width: 400px;
+  width: 100%;
+  /* width 100% controls scaling */
+}
+/* screen size adjustments */
+@media screen and (max-width: 927px) {
+  .wrapper {
+    grid-template-columns: 1fr;
+  }
+  .header-text-group {
+    margin-left: 0;
+    padding: 4.5rem;
+    text-align: center;
+  }
 }

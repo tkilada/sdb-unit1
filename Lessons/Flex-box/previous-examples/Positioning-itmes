@@ -1,0 +1,14 @@
+.container{
+    border: 5px solid #ffcc5c;
+    display:flex;
+}
+
+/* if wanted about and logiut on far right  */
+
+ /* .about{
+    margin-left: auto;
+ } */
+/* logout on far right only  */
+.logout{
+    margin-left: auto;
+}
